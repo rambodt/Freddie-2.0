@@ -162,6 +162,28 @@ CH_NECK_PITCH = 14 # Neck up/down tilt
 CH_NECK_ROLL = 15  # Neck side tilt
 
 
+## 🔧 Technical Implementation Details
+
+### System Architecture
+- **Main Processing**: Python on Windows PC handling AI, vision, and audio
+- **Arduino Firmware**: FreeRTOS-based for reliable multi-tasking servo control
+- **Communication**: 2Mbps serial link for low-latency control
+- **Control Loop**: 50Hz update rate for smooth servo movements
+
+### Performance Specifications
+- **Servo Control**: 16 channels with microsecond precision
+- **Emotion Detection**: 250ms update interval with EMA smoothing
+- **Face Tracking**: 30 FPS with MediaPipe optimization
+- **Audio Processing**: 16kHz sampling with 3-second analysis windows
+- **Response Latency**: <100ms from emotion detection to facial expression
+
+### Key Algorithms
+- **SER Feature Extraction**: 165-dimensional vectors using librosa
+- **Lip Sync**: Real-time phoneme-to-viseme mapping
+- **Head Tracking**: PID control for smooth neck movements
+- **Emotion Smoothing**: Exponential moving average (α=0.15) for stability
+
+
 ## 🎥 Demo
 
 Check out Freddie 2.0 in action:  

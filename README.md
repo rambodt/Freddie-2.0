@@ -168,11 +168,7 @@ Check out Freddie 2.0 in action:
 [![Freddie 2.0 Demo](https://img.shields.io/badge/YouTube-Watch%20Demo-red?logo=youtube)](https://youtu.be/OZfJSSJ9VQY)
 
 
-## 📜 Credits & Attributions
-
-### Model Development
-The **Speech Emotion Recognition (SER) model was developed and trained by the author** using the datasets listed below.  
-This is **not a pre-trained or off-the-shelf model** — it was built from scratch as part of this project.  
+## 📜 Credits & Attributions 
 
 ### Open-Source Libraries
 - [NumPy](https://numpy.org/)  
